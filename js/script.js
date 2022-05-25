@@ -34,9 +34,18 @@ const myApp = new Vue({
         nextSlides(){
             this.activeSlide++;
             console.log(this.activeSlide);
-            if( this.activeSlide > this.slides.lenght - 1) {
+            if( this.activeSlide > this.slides.length - 1) {
                 this.activeSlide = 0;
             }
+        },
+        prevSlides(){
+            this.activeSlide--;
+            if( this.activeSlide < 0) {
+                this.activeSlide = this.slides.length -1;
+            }
+        },
+        cambioSlide(){
+            this.activeSlide === ;
         }
     }
 });
