@@ -23,11 +23,11 @@ const myApp = new Vue({
                 title: 'Germania',
                 text: 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et temporibus voluptatum suscipit tempore aliquid deleniti aut veniam inventore eligendi ex ad ullam.',
             },
-            {
+            {   
                 image: 'img/05.jpg',
                 title: 'Paradise',
                 text: 'Et temporibus voluptatum suscipit tempore aliquid deleniti aut veniam inventore eligendi ex ad ullam, cumque provident totam omnis.',
-            }
+            }   
         ]
     },
     methods : {
@@ -44,9 +44,10 @@ const myApp = new Vue({
                 this.activeSlide = this.slides.length -1;
             }
         },
-        cambioSlide(){
-            this.activeSlide 
+        cambioSlide(numeroSlide){
+            this.activeSlide = numeroSlide;
         }
+        
     }
 });
 
