@@ -29,6 +29,15 @@ const myApp = new Vue({
                 text: 'Et temporibus voluptatum suscipit tempore aliquid deleniti aut veniam inventore eligendi ex ad ullam, cumque provident totam omnis.',
             }
         ]
+    },
+    methods : {
+        nextSlides(){
+            this.activeSlide++;
+            console.log(this.activeSlide);
+            if( this.activeSlide > this.slides.lenght - 1) {
+                this.activeSlide = 0;
+            }
+        }
     }
 });
 
