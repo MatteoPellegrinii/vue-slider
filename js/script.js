@@ -45,7 +45,7 @@ const myApp = new Vue({
             }
         },
         cambioSlide(){
-            this.activeSlide === ;
+            this.activeSlide 
         }
     }
 });
