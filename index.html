@@ -29,8 +29,8 @@
                 <div class="thumbs">
                     <div class="prev" @click="prevSlides"></div>
                     <div class="next" @click="nextSlides()"></div>
-                    <div v-for="(slide, i) in slides" class="thumb" :class="i === activeSlide ? 'active' : '' " :key="i">
-                        <img :src="slide.image" :alt="slide.title" @click="cambioSlide(i)" />
+                    <div v-for="(slide, i) in slides" class="thumb" :class="i === activeSlide ? 'active' : '' " :key="i" @click="cambioSlide(i)">
+                        <img :src="slide.image" :alt="slide.title"  />
                     </div>
                 </div>
 
